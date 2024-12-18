@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aymen's Site </title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Aymen</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="100"><a href="./Home.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="200"><a href="./About.html">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="300"><a href="./Skills.html">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="400"><a href="./Services.html">Services</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="500"><a href="./Quiz.html">Quiz</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="600"><a href="./contact.html">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+   </nav>
+<body>
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="700" data-aos-deplay="200">
+                    <img src="images\main2.jpg" alt="Aymen's Photo"/>
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-deplay="200">Robotic Is My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-deplay="300">
+                        Furthermore, robotics has given me the opportunity to explore my creative side. I love designing unique and innovative robots that can perform various tasks. Whether it's a simple line-following robot or a complex humanoid robot, the freedom to create something new and exciting is what drives my passion for this hobby.
+                    </p>
+                    <div class="btn" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-deplay="400">
+                        <button><a href="../images/cv.pdf"  download="cv.pdf" style="color: white;" target="_blank" >Download CV</a></button>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text">
+            <span>Created By <a href="pages\Home.html">Aymen Chiab</a> |&#169; 2024 All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+</body>
+</html>

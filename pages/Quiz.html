@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aymen's Site </title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script type="text/javascript" src="fichier.js"></script>
+    <header class="header">
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Aymen</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="100"><a href="./Home.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="200"><a href="./About.html">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="300"><a href="./Skills.html">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="400"><a href="./Services.html">Services</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="500"><a href="./Quiz.html">Quiz</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="600"><a href="./contact.html">Contact</a></div> 
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+   </nav>
+</header>
+
+<section id="quizz">
+    <h2>Quizz </h2>
+    <form id="quizForm">
+        <div>
+            <p>1. How many players are there in a soccer team on the field?</p>
+            <input type="radio" name="q1" value="11"> 11<br>
+            <input type="radio" name="q1" value="9"> 9<br>
+            <input type="radio" name="q1" value="12"> 12
+        </div>
+
+        <div>
+            <p>2. In which sport is the term "love" used to mean a score of zero?</p>
+            <input type="radio" name="q2" value="Tennis"> Tennis<br>
+            <input type="radio" name="q2" value="Basketball"> Basketball<br>
+            <input type="radio" name="q2" value="Baseball"> Baseball
+        </div>
+
+        <div>
+            <p>3. Which country has won the most FIFA World Cups?</p>
+            <input type="radio" name="q3" value="Brazil"> Brazil<br>
+            <input type="radio" name="q3" value="Germany"> Germany<br>
+            <input type="radio" name="q3" value="Italy"> Italy
+        </div>
+
+        <div>
+            <p>4. What is the maximum score in a single game of bowling?</p>
+            <input type="radio" name="q4" value="300"> 300<br>
+            <input type="radio" name="q4" value="200"> 200<br>
+            <input type="radio" name="q4" value="250"> 250
+        </div>
+
+        <div>
+            <p>5. In which year were the first modern Olympic Games held?</p>
+            <input type="radio" name="q5" value="1896"> 1896<br>
+            <input type="radio" name="q5" value="1900"> 1900<br>
+            <input type="radio" name="q5" value="1880"> 1880
+        </div>
+
+        <div>
+            <p>6. How many points is a touchdown worth in American football?</p>
+            <input type="radio" name="q6" value="6"> 6<br>
+            <input type="radio" name="q6" value="7"> 7<br>
+            <input type="radio" name="q6" value="3"> 3
+        </div>
+
+        <div>
+            <p>7. In which sport would you perform a "slam dunk"?</p>
+            <input type="radio" name="q7" value="Basketball"> Basketball<br>
+            <input type="radio" name="q7" value="Volleyball"> Volleyball<br>
+            <input type="radio" name="q7" value="Soccer"> Soccer
+        </div>
+
+        <div>
+            <p>8. What is the diameter of a basketball hoop in inches?</p>
+            <input type="radio" name="q8" value="18"> 18<br>
+            <input type="radio" name="q8" value="20"> 20<br>
+            <input type="radio" name="q8" value="22"> 22
+        </div>
+
+        <div>
+            <p>9. Who holds the record for the most home runs in MLB history?</p>
+            <input type="radio" name="q9" value="Barry Bonds"> Barry Bonds<br>
+            <input type="radio" name="q9" value="Babe Ruth"> Babe Ruth<br>
+            <input type="radio" name="q9" value="Hank Aaron"> Hank Aaron
+        </div>
+
+        <div>
+            <p>10. In soccer, what is the term for when a player scores three goals in a single match?</p>
+            <input type="radio" name="q10" value="Hat-trick"> Hat-trick<br>
+            <input type="radio" name="q10" value="Triple goal"> Triple goal<br>
+            <input type="radio" name="q10" value="Three-peat"> Three-peat
+        </div>
+
+        
+        
+        <div class="content">
+            <button type="button"  class="btn-1" onclick="submitQuiz()">Submit</button>
+        </div>
+    </form>
+    <p id="quizResult"></p>
+</section>
+
+  
+     
+
+
+<footer>
+    <div class="text">
+        <span>Created By <a href="pages\Home.html" >Aymen Chiab</a> |&#169; 2024 All Rights Reserved</span>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+</script>
+</body>
+</html>

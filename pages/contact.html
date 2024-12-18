@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aymen's Site </title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script type="text/javascript" src="fichier.js"></script>
+    <header class="header">
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <span>Aymen</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="100"><a href="./Home.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="200"><a href="./About.html">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="300"><a href="./Skills.html">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="400"><a href="./Services.html">Services</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="500"><a href="./Quiz.html">Quiz</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1500" data-aos-deplay="600"><a href="./contact.html">Contact</a></div> 
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+   </nav>
+</header>
+<center>
+    <section class="contact">
+    <div class="contact-content" >
+    <section class="contact-form">
+    <h2 class="contact-me"> Contact <span> Me </span></h2>
+    
+     <form action="#">
+    
+    <div class="input-box">
+      <input type="text" placeholder="Nom et Prénom">
+      <input type="email" placeholder="Email">
+     </div>
+    
+     <div class="input-box">
+    <input type="number" placeholder="Numero de téléphone">
+     <input type="text" placeholder="Sujet">
+    </div>
+    
+    <textarea name=" id= " cols="30" rows="10" placeholder="Votre Message"></textarea>
+    <div class="content">
+    <button type="Submit" value="Submit " class="btn-1" onclick="envoyermail()">Submit</button>
+</div>
+    </form>
+</section>
+            </div>
+        </section>
+                </center>
+         
+   
+  
+     
+
+
+<footer>
+    <div class="text">
+        <span>Created By <a href="pages\Home.html" >Aymen Chiab</a> |&#169; 2024 All Rights Reserved</span>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+</script>
+</body>
+</html>
